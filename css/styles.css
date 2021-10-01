@@ -1,0 +1,355 @@
+@font-face{
+    font-family: 'DarkSouls';
+    src: url(/font/OptimusPrincepsSemiBold.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+    font-family: 'DarkSoulsBold';
+    src: url(/font/OptimusPrinceps.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+a{
+    text-decoration:none;
+}
+
+/*--------------------------------- HEADER*/
+
+#titulo{
+    text-decoration: none;
+    color: #000;
+    margin-left: 2%;
+    font-family: 'DarkSoulsBold';
+    font-weight: bolder;
+    font-size: 2.3em;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+#titulo:hover{
+    color: white;
+}
+
+.contenedorHeader{
+    background-color: rgba(255, 255, 255, 0.246);
+    z-index: 9999999999999999999;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    height: 10vh; 
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+}
+.contenedorHeader >img{
+    width: 10vh;
+    margin: 0 60px;
+}
+.devinfo{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: flex-end;
+    right: 2%;
+}
+.devinfo img{
+    width: 7vh;
+    margin: 0 5px; 
+}
+.segundotitulo h2{
+    display: flex;
+    position: absolute;
+    left: 40px;
+    font-family: 'DarkSouls';
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.devinfo img:hover{
+    filter: invert(1);
+}
+
+/*------------------------------------ PAGINA PRINCIPAL*/
+
+.pagPrincipal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: black;
+}
+.videoback video{
+    position: fixed;
+    width: 100%;
+    height: auto;
+}
+.contenedorprinci{
+    width: 100%;
+    position: absolute;
+    top: 75%;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    background-color: rgba(0, 0, 0, 0.212);
+}
+.texto{
+    color: white;
+    font-family: 'DarkSouls';
+}
+
+/*------------------------- BUTTONS */
+
+.buttons button{
+    padding:15px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(209, 117, 4);
+    color: black;
+    font-family: 'DarkSoulsBold';
+    font-size: 1.5em;
+    box-shadow: black 1px 1px 5px 3px;
+    text-shadow: 1px 1px 1px black;
+    transition: .3s;
+    cursor: cell;
+}
+
+.buttons button:hover{
+    background-color: black;
+    color: rgb(209, 117, 4);
+}
+
+/*--------------------------------- JEFES DIV*/
+.secjef{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.644);
+    z-index: 99999;
+    display: none;
+    opacity: 0;
+    transition: .4s;
+}
+#close{
+    font-family: 'DarkSouls';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 2%;
+    top: 10%;
+    font-size: 1em;
+    width: 55px;
+    height: 55px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-color: rgb(209, 117, 4);
+    color: black;
+    box-shadow: 2px 2px 10px rgb(221, 168, 55);
+    text-shadow: 1px 1px 7px white;
+    transition: .3s;
+}
+#close:hover{
+    cursor: pointer;
+    background-color: black;
+    color: rgb(209, 117, 4);
+}
+.jefes{
+    display: flex;
+    width: 30%;
+    height: 70%;
+    padding: 30px;
+    background-image: url(/img/marcaoscura.gif);
+    background-size: cover;
+    background-position: center;
+    z-index: 999;
+    border-radius: 5px;
+    border: 0.1px white solid;
+    flex-flow: column nowrap;
+    
+    color: rgb(251, 0, 0);
+    white-space: normal;
+    overflow: auto;
+    visibility: visible;
+}
+.jefes h1{
+    font-family: 'DarkSoulsBold';
+    width: 100%;
+    text-align:center;
+    font-size: 3em;
+    text-shadow: 1px 1px 5px rgb(107, 105, 101);
+
+}
+.listajefes a{
+    text-decoration: none;
+    font-family: 'DarkSouls';
+    font-size: 1.7em;
+    color: white;
+    line-height: 70px;
+}
+.listajefes a:hover{
+    color: rgb(251, 0, 0);
+    font-size: 2em;
+}
+
+/*--------------------------------- FOOTER*/
+
+footer{
+    display: flex;
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 2%;
+    font-size: 0.4em;
+    bottom: 5px;
+    justify-content:center ;
+    color: white;
+}
+footer h2{
+    margin: 0;
+    padding: 0;
+    font-family: 'DarkSoulsBold';
+    padding: 20px;
+}
+/*------------------------------ SOBRE DARK SOULS*/
+.sobredkcont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.textsobredk{
+    width: 60%;
+    padding-left: 2%;
+    font-family: 'DarkSoulsBold';
+    padding-top: 12vh;
+    font-size: 2em;
+    background-image: url(/img/marcaoscura.gif);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.textsobredk h1{
+    text-align: center;
+    text-shadow: 2px 2px 2px white;
+}
+.textsobredk h2{
+    text-align: center;
+    text-shadow: 2px 2px 5px white;
+    text-decoration: underline;
+}
+.textsobredk p{
+    margin-right: 10%;
+    font-size: 0.9em;
+}
+.contimgdk{
+    width: 40%;
+    height: 100%;
+    background-color: black;
+    box-sizing: border-box;
+}
+.contimgdk img{
+    width: 100%;
+    height: 100%;
+}
+
+/*----------------- adiccionales*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.719);
+}
+ 
+::-webkit-scrollbar-thumb {
+    background-color: rgba(78, 80, 36, 0.561);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+/*------------------ Pantallas de carga*/
+.cargajefe{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background:linear-gradient(black,rgb(10, 9, 9),black);
+    color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DarkSouls';
+    font-size: 3em;
+    text-decoration: underline;  
+    text-shadow: grey 2px 2px 6px;
+    display:none;
+    opacity: 0;
+    transition: .3s;
+}
+
+/*--------------------- Info Jefe*/
+.sobrejf{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    top: 0%;
+    justify-content: space-between;
+    display: none;
+    opacity: 0;
+    transition: 3s;
+    z-index: 999999999;
+}
+.textsobrejf{
+    width: 60%;
+    padding-left: 2%;
+    font-family: 'DarkSoulsBold';
+    padding-top: 12vh;
+    font-size: 2em;
+    background-image: url(/img/marcaoscura.gif);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    overflow: auto;
+}
+.textsobrejf h1{
+    text-align: center;
+    text-shadow: 2px 2px 2px white;
+}
+.textsobrejf h2{
+    text-align: center;
+    text-shadow: 2px 2px 5px white;
+    text-decoration: underline;
+}
+.textsobrejf p{
+    margin-right: 10%;
+    font-size: 0.9em;
+}
+.contimgjf{
+    width: 40%;
+    height: 100%;
+    background-color: black;
+    box-sizing: border-box;
+}
+.contimgjf img{
+    width: 100%;
+    height: 100%;
+}
