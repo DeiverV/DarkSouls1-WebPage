@@ -1,6 +1,6 @@
 /*--------------------- Menu*/
 
-let openmenu = document.getElementById('apareceverga');
+let openmenu = document.getElementById('aparecemenu');
 let menu = document.getElementById('secjef');
 let closemenu = document.getElementById('close')
 
